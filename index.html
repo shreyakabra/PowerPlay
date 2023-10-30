@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Placement PowerPlay</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://sangamuniversity.ac.in/">
+                    <img src="SangamUniversity.png" alt="Sangam University">
+                </a>
+            </div>
+            <div class="logo">
+                <img src="Placement.png" alt="PLACEMENT POWERPLAY">
+            </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>PLACEMENT POWERPLAY</h1>
+        </section>
+        <section class="content" style="text-transform: capitalize;">
+            <h2>Event Rules:</h2>
+            <ll class="rule">
+                <li>The test has a time limit of 45 minutes.</li>
+                <li>Responses submitted after the deadline may not be accepted.</li>
+                <li>You have only a single attempt to complete the test.</li>
+                <li>Ensure your internet connection and device are stable.</li>
+            </ll>
+            <button class="button" id="randomButton">
+                <div class="click">Let's Begin</div>
+            </button>
+        </section>
+    </main>
+    <script>
+        const links = [
+            "https://presenter.jivrus.com/p/1FPEQumrFjIEov9quATODJbYOeKNbp-HpHADKbvEkLvM",            "https://presenter.jivrus.com/p/1tbtwExcg0lnK9cAQkqLP1WdFGc3TOYqZnWxdvwg0aFg",         
+           "https://presenter.jivrus.com/p/1ibpAShHtVILGIJroENCiHdF4laLy1G1LimPRyIA2nbQ",           // Add more links as needed
+        ];
+
+        document.getElementById("randomButton").addEventListener("click", function() {
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            window.location.href = randomLink;
+        });
+    </script>
+</body>
+</html>
