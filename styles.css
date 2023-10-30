@@ -1,0 +1,134 @@
+/* General styling for all screen sizes */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff33;
+  
+}
+
+/* Header */
+header {
+  background-color: rgba(52, 85, 139, 0.7); /* Background with opacity */
+  color: #fff;
+  padding: 10px 0;
+  position: fixed; /* Fixed header to stay at the top */
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  padding: 23px 0;
+  color: #000000;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+/* Content Section */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;; /* Center-align content */
+}
+
+.content h2 {
+  font-size: 24px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content li {
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(45deg, #3498db, #e74c3c); /* Change the background color on hover */
+  background-size: cover;
+  margin-top: 50px;
+  background-position: center;
+  opacity: 0.8;
+  color: #000000;
+  padding: 15px 30px; /* Adjust padding as needed */
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 18px; /* Adjust font size as needed */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;  
+}
+
+.button:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #3498db, #e74c3c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  
+}
+
+/* You can customize the button's hover effect and other properties as needed. */
+
+
+/* Media Queries for larger screens */
+/* CSS for tablets (768px - 1024px) */
+@media (min-width: 768px) {
+  .menu {
+      display: flex; /* Display the menu on tablets and larger screens */
+    }
+}
+
+/* CSS for desktop devices (1024px and above) */
+@media (min-width: 1024px) {
+  .menu {
+      display: flex; /* Display the menu on desktops as well */
+  }
+}
